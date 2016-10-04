@@ -6,7 +6,7 @@ var go = function() {
 
 // });
 
-  tagged_url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback="
+  tagged_url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
 // var request = {
 //     // tagged: tags,
 //     site: 'stackoverflow'
@@ -21,6 +21,7 @@ var go = function() {
     type: "GET",
   })
   .done(function(a){ //this waits for the ajax to return with a succesful promise object
+      console.log(a);
       $("body").append("<p>" + a[0].title + "</p>")
   })
 
