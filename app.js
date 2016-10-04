@@ -22,10 +22,11 @@ var go = function() {
   })
   .done(function(a){ //this waits for the ajax to return with a succesful promise object
       console.log(a);
-      $("body").append("<p>" + a[0].title + "</p>")
+      var replace = $("div").find("p");
+      replace.text(a[0].title)
   })
 
-}
+}()
 
 $("button").click(function() {
   go();
