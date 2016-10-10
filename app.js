@@ -16,8 +16,8 @@ var go = function() {
   })
   .done(function(a){ //this waits for the ajax to return with a succesful promise object
       console.log(a);
-      var replace = $("div").find(".author");
-      replace.text("- " + a[0].title)
+      var author = $("div").find(".author");
+      author.text("- " + a[0].title)
 
       var quote = $("div").find(".quote");
       quote.text(a[0].content)
