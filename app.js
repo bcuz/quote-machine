@@ -11,7 +11,7 @@ var newQuote = function() {
   })
   .done(function(result){ //this waits for the ajax to return with a succesful promise object
 
-    // can put this stull in a function
+    // can put this stuff in a function
       var author = $("div").find(".author");
       author.text("- " + result[0].title)
 
