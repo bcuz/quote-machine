@@ -1,11 +1,5 @@
 var go = function() {
 
-//   $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
-
-
-
-// });
-
   tagged_url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
 // var request = {
 //     // tagged: tags,
@@ -29,7 +23,9 @@ var go = function() {
       quote.text(a[0].content)
   })
 
-}()
+}
+
+go()
 
 $("button").click(function() {
   go();
