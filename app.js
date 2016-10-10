@@ -26,9 +26,9 @@ var go = function() {
       var quote = $("div").find(".quote");
       // var a = a.replace(/<p>/g, "");
 
+      // have to replace &#8211; &#8211 too
       var content = a[0].content.replace(/<p>|<\/p>/g, "");
       var content = content.replace(/&#8217;/g, "'");
-      // #8217;
       quote.text(content)
   })
 
