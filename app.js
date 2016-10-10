@@ -1,4 +1,4 @@
-var go = function() {
+var newQuote = function() {
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
   $("body, a").css({"background-color": "#" + randomColor})
   // $(".quote, .author").css("color", "#" + randomColor)
@@ -25,8 +25,8 @@ var go = function() {
 
 }
 
-go()
+newQuote()
 
 $(".new-quote").click(function() {
-  go();
+  newQuote();
 })
