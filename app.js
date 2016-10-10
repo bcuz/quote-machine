@@ -12,7 +12,7 @@ var newQuote = function() {
     type: "GET",
   })
   .done(function(result){ //this waits for the ajax to return with a succesful promise object
-
+      // console.log(result);
     // can put this stuff in a function
       var author = $("div").find(".author");
       author.text("- " + result[0].title)
@@ -24,6 +24,8 @@ var newQuote = function() {
       var content = content.replace(/&#8211;/g, "-");
 
       quote.text(content)
+
+      $(".twt").attr("href", "https://twitter.com/intent/tweet?&text=" + content + result[0].title)
   })
 
 }
