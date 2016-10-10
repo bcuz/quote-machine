@@ -17,9 +17,10 @@ var newQuote = function() {
 
       var quote = $("div").find(".quote");
 
-      // have to replace &#8211; &#8211 too
+      // have to replace &#8211; &#8216; too
       var content = result[0].content.replace(/<p>|<\/p>|<br \/> |<\/strong>|<strong>/g, "");
       var content = content.replace(/&#8217;/g, "'");
+      // var content = content.replace(/&#8217;/g, "'");
       quote.text(content)
   })
 
