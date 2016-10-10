@@ -1,4 +1,6 @@
 var newQuote = function() {
+  // https://twitter.com/intent/tweet?&text=bobby brown
+
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
   $("body, a").css({"background-color": "#" + randomColor})
   // $(".quote, .author").css("color", "#" + randomColor)
