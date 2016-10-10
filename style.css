@@ -6,7 +6,7 @@ div {
   border-radius: 5px;
 }
 
-button {
+a {
   float: right;
 }
 
@@ -19,7 +19,8 @@ button {
 }
 
 .author {
-  text-align: right
+  text-align: right;
+  margin-bottom: 2em;
 }
 
 body {
