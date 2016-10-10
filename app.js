@@ -3,11 +3,8 @@ var go = function() {
   $("body, a").css({"background-color": "#" + randomColor})
   // $(".quote, .author").css("color", "#" + randomColor)
 
-  tagged_url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
-
-
   $.ajax({
-    url: tagged_url,
+    url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
     cache: false,
     dataType: "json",//use jsonp to avoid cross origin issues
     type: "GET",
