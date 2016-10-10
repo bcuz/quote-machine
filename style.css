@@ -12,6 +12,10 @@ button {
   float: left;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .author {
   text-align: right
 }
