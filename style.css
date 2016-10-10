@@ -10,3 +10,7 @@ button {
 .twt {
   float: left;
 }
+
+.author {
+  text-align: right
+}
