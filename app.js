@@ -2,6 +2,7 @@ var go = function() {
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
   console.log(randomColor);
   $("body").css({"background-color": "#" + randomColor})
+  $("a").css("background-color",  "#" + randomColor)
 
   tagged_url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
 // var request = {
@@ -36,6 +37,6 @@ var go = function() {
 
 go()
 
-$("button").click(function() {
+$("a").click(function() {
   go();
 })
