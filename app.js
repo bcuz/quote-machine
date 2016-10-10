@@ -28,7 +28,7 @@ var go = function() {
       // var a = a.replace(/<p>/g, "");
 
       // have to replace &#8211; &#8211 too
-      var content = a[0].content.replace(/<p>|<\/p>/g, "");
+      var content = a[0].content.replace(/<p>|<\/p>|<\/strong>|<strong>/g, "");
       var content = content.replace(/&#8217;/g, "'");
       quote.text(content)
   })
