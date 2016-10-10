@@ -1,6 +1,5 @@
 var go = function() {
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  console.log(randomColor);
   $("body, a").css({"background-color": "#" + randomColor})
   // $(".quote, .author").css("color", "#" + randomColor)
 
