@@ -6,7 +6,7 @@ var newQuote = function() {
   // $(".quote, .author").css("color", "#" + randomColor)
 
   $.ajax({
-    url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
+    url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
     cache: false,
     dataType: "json",//use jsonp to avoid cross origin issues
     type: "GET",
