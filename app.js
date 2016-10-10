@@ -18,8 +18,8 @@ var go = function() {
     type: "GET",
   })
   .done(function(result){ //this waits for the ajax to return with a succesful promise object
-      console.log(result);
 
+    // can put this stull in a function
       var author = $("div").find(".author");
       author.text("- " + result[0].title)
 
