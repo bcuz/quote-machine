@@ -36,6 +36,6 @@ var go = function() {
 
 go()
 
-$("a").click(function() {
+$("new-quote").click(function() {
   go();
 })
