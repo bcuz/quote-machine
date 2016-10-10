@@ -18,16 +18,16 @@ var go = function() {
     dataType: "json",//use jsonp to avoid cross origin issues
     type: "GET",
   })
-  .done(function(a){ //this waits for the ajax to return with a succesful promise object
-      console.log(a);
+  .done(function(result){ //this waits for the ajax to return with a succesful promise object
+      console.log(result);
 
       var author = $("div").find(".author");
-      author.text("- " + a[0].title)
+      author.text("- " + result[0].title)
 
       var quote = $("div").find(".quote");
 
       // have to replace &#8211; &#8211 too
-      var content = a[0].content.replace(/<p>|<\/p>|<br \/> |<\/strong>|<strong>/g, "");
+      var content = result[0].content.replace(/<p>|<\/p>|<br \/> |<\/strong>|<strong>/g, "");
       var content = content.replace(/&#8217;/g, "'");
       quote.text(content)
   })
