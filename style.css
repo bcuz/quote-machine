@@ -12,7 +12,10 @@ a {
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
-  /*background-color: green;*/
+}
+
+a:hover {
+  opacity: 0.6;
 }
 
 .twt {
