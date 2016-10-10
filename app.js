@@ -1,4 +1,7 @@
 var go = function() {
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  console.log(randomColor);
+  $("body").css("background-color", "#" + randomColor)
 
   tagged_url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
 // var request = {
@@ -24,6 +27,8 @@ var go = function() {
       // var a = a.replace(/<p>/g, "");
 
       var content = a[0].content.replace(/<p>|<\/p>/g, "");
+      var content = content.replace(/&#8217;/g, "'");
+      // #8217;
       quote.text(content)
   })
 
