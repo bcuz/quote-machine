@@ -16,11 +16,15 @@ var go = function() {
   })
   .done(function(a){ //this waits for the ajax to return with a succesful promise object
       console.log(a);
+
       var author = $("div").find(".author");
       author.text("- " + a[0].title)
 
       var quote = $("div").find(".quote");
-      quote.text(a[0].content)
+      // var a = a.replace(/<p>/g, "");
+
+      var content = a[0].content.replace(/<p>|<\/p>/g, "");
+      quote.text(content)
   })
 
 }
