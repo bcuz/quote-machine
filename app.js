@@ -25,7 +25,6 @@ var go = function() {
       author.text("- " + a[0].title)
 
       var quote = $("div").find(".quote");
-      // var a = a.replace(/<p>/g, "");
 
       // have to replace &#8211; &#8211 too
       var content = a[0].content.replace(/<p>|<\/p>|<br \/> |<\/strong>|<strong>/g, "");
