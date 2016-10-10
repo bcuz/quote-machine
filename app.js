@@ -4,16 +4,11 @@ var go = function() {
   // $(".quote, .author").css("color", "#" + randomColor)
 
   tagged_url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
-// var request = {
-//     // tagged: tags,
-//     site: 'stackoverflow'
-//     // order: 'desc',
-//     // sort: 'creation'
-//   };
+
+
   $.ajax({
     url: tagged_url,
     cache: false,
-    // data: request,
     dataType: "json",//use jsonp to avoid cross origin issues
     type: "GET",
   })
