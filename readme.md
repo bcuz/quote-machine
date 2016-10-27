@@ -1,0 +1,1 @@
+https://bcuz.github.io/quote-machine/
